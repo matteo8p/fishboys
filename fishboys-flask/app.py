@@ -27,7 +27,6 @@ def queryFishDB(query):
         conn.commit()
         return res
 
-
 @app.route(DETECTION_URL, methods=["POST"])
 def predict():
     if not request.method == "POST":
